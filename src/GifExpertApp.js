@@ -1,5 +1,6 @@
 //rafce
 import React,{ useState } from 'react'
+import AddCategory from './components/AddCategory';
 
 const GifExpertApp = () => {
 
@@ -7,13 +8,14 @@ const GifExpertApp = () => {
 
   const addCategory = (e) => {
     //setCategories([...categories, "Videl"]);
-    setCategories(cats => [...cats, "Bulma"]);
+    setCategories(cats => [...cats, "dd"]);
   } 
 
   return (
     <>
       
       <h2> GifExpertApp </h2>
+      <AddCategory setCategories = { setCategories}/>
       <hr />
       <button onClick={ addCategory }>Agergar</button>
       <ol>

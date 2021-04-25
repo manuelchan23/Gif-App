@@ -5,3 +5,8 @@ body {
   padding: 60px;
   color: red;
 }
+input{
+  font-size: 12px;
+  color: grey;
+  width: 100%;
+}
