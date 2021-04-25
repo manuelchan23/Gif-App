@@ -1,10 +1,11 @@
 //rafce
 import React,{ useState } from 'react'
 import AddCategory from './components/AddCategory';
+import GifGrid from './components/GifGrid';
 
 const GifExpertApp = () => {
 
-  const [categories, setCategories] = useState(["Goku","Gohan","krilin"]);
+  const [categories, setCategories] = useState(["Goku"]);
 
   const addCategory = (e) => {
     //setCategories([...categories, "Videl"]);
@@ -21,7 +22,8 @@ const GifExpertApp = () => {
       <ol>
         {
           categories.map( category => {
-            return <li key={ category }> { category } </li>
+            //return <li key={ category }> { category } </li>
+            return <GifGrid key={ category } category = { category } />
           })
         }
       </ol>
